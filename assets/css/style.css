@@ -33,14 +33,16 @@
     background: #666666;
 }
 
-body {
+html {
     background: linear-gradient(315deg, #fce7a7, #fcc97a);
     background-size: 400% 400%;
+    background-color: #f1f1f1;
+    height: 100vh;
+    width: 100vw;;
 
     -webkit-animation: bgAnim 30s ease infinite;
     -moz-animation: bgAnim 30s ease infinite;
     animation: bgAnim 30s ease infinite;
-    
 }
 
 .container {
@@ -65,13 +67,13 @@ img {
     font-size: 4em;
 }
 
-footer {
-    font-family: ust, serif;
-    width: 100%;
-    height: 2.5vh;
-    padding: 0.3em;
-    left: 0;
-    bottom: 0;
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 @media only screen and (max-width: 600px) {
