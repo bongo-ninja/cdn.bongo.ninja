@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'ush';
+    font-weight: 600;
+    src: url('../fonts/usans-heavy.otf');
+}
+
+@font-face {
+    font-family: 'ust';
+    font-weight: 300;
+    src: url('../fonts/usans-thin.otf');
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    animation: fadeIn ease 20s;
+    -webkit-animation: fadeIn ease 0.2s;
+    -moz-animation: fadeIn ease 0.2s;
+    -o-animation: fadeIn ease 0.2s;
+    -ms-animation: fadeIn ease 0.2s;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #f1f1f1;
+    background: #666666;
+}
+  
+::selection {
+    color: #f1f1f1;
+    background: #666666;
+}
+
+body {
+    background: linear-gradient(315deg, #fce7a7, #fcc97a);
+    background-size: 400% 400%;
+
+    -webkit-animation: bgAnim 30s ease infinite;
+    -moz-animation: bgAnim 30s ease infinite;
+    animation: bgAnim 30s ease infinite;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: ush, serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img {
+    height: 15%;
+    width: 15%;
+    padding: 0.5em;
+}
+
+.container h1 {
+    padding: 0.5em;
+    font-size: 4em;
+}
+
+footer {
+    font-family: ust, serif;
+    width: 100%;
+    height: 2.5vh;
+    padding: 0.3em;
+    left: 0;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .container h1 {
+        padding: 0.5em;
+        font-size: 2.5em;
+    }
+}
+
+/* Animations */
+
+@-webkit-keyframes bgAnim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@-moz-keyframes bgAnim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+@keyframes bgAnim {
+    0%{background-position:0% 41%}
+    50%{background-position:100% 60%}
+    100%{background-position:0% 41%}
+}
+
+@keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+    
+@-moz-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+    
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+    
+@-o-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
+    
+@-ms-keyframes fadeIn {
+    0% {opacity:0;}
+    50% {opacity:0.5;}
+    100% {opacity:1;}
+}
